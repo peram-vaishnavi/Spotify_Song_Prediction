@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Songs Page</title>
+    <link rel="stylesheet" href="songs.css">
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Your Library</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="https://via.placeholder.com/1500x500" alt="Banner Image">
+            <div class="banner-text">
+                <h1>Top Hits</h1>
+                <p>The best songs of the week</p>
+            </div>
+        </section>
+        <section class="songs">
+            <h2>Featured Songs</h2>
+            <div id="songs-list" class="songs-list">
+                <!-- Songs will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Spotify AB</p>
+    </footer>
+    <div id="song-bar" class="song-bar">
+        <div class="song-info">
+            <img id="song-cover" src="" alt="Song Cover">
+            <div>
+                <h3 id="song-title">Song Title</h3>
+                <p id="song-artist">Song Artist</p>
+            </div>
+        </div>
+        <button id="play-pause" onclick="togglePlay()">Play/Pause</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

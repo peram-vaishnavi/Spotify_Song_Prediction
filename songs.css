@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1DB954;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main .banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+main .banner img {
+    width: 100%;
+    height: auto;
+}
+
+main .banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .songs {
+    padding: 20px;
+}
+
+main .songs h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .songs .songs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+main .songs .songs-list .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    transition: transform 0.3s;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main .songs .songs-list .card:hover {
+    transform: scale(1.05);
+}
+
+main .songs .songs-list .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+main .songs .songs-list .card .song-details h3 {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+main .songs .songs-list .card .song-details p {
+    margin: 5px 0 0;
+    color: #666;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.song-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1DB954;
+    padding: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.song-bar .song-info {
+    display: flex;
+    align-items: center;
+}
+
+.song-bar .song-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.song-bar button {
+    background-color: #1DB954;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.song-bar button:hover {
+    background-color: #17a147;
+}
